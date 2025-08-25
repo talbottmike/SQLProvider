@@ -128,11 +128,11 @@ module MSSqlServerSsdt =
           "NUMERIC", "System.Decimal", DbType.Decimal, toInt SqlDbType.Decimal
           "MONEY", "System.Decimal", DbType.Decimal, toInt SqlDbType.Money
           "SMALLMONEY", "System.Decimal", DbType.Decimal, toInt SqlDbType.SmallMoney
-          "VARCHAR", "System.String", DbType.String, toInt SqlDbType.VarChar
+          "VARCHAR", "System.String", DbType.AnsiString, toInt SqlDbType.VarChar
           "NVARCHAR", "System.String", DbType.String, toInt SqlDbType.NVarChar
-          "CHAR", "System.String", DbType.String, toInt SqlDbType.Char
+          "CHAR", "System.String", DbType.AnsiStringFixedLength, toInt SqlDbType.Char
           "NCHAR", "System.String", DbType.StringFixedLength, toInt SqlDbType.NChar
-          "TEXT", "System.String", DbType.String, toInt SqlDbType.Text
+          "TEXT", "System.String", DbType.AnsiString, toInt SqlDbType.Text
           "NTEXT", "System.String", DbType.String, toInt SqlDbType.NText
           "DATETIMEOFFSET", "System.DateTimeOffset", DbType.DateTimeOffset, toInt SqlDbType.DateTimeOffset
           "DATE", "System.DateTime", DbType.Date, toInt SqlDbType.Date
